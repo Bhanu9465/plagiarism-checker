@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - AI-Powered Plagiarism Checker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-shield-alt me-2"></i>
+                Plagiarism Checker
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- Header -->
+                <div class="text-center mb-5">
+                    <h1 class="display-4 fw-bold text-primary">
+                        <i class="fas fa-info-circle me-3"></i>
+                        About Our Plagiarism Checker
+                    </h1>
+                    <p class="lead text-muted">
+                        Advanced AI-powered text similarity analysis for academic and professional use
+                    </p>
+                </div>
+
+                <!-- What We Do -->
+                <div class="card shadow-lg mb-5">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="mb-0">
+                            <i class="fas fa-bullseye me-2"></i>
+                            What We Do
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="lead">
+                            Our AI-powered plagiarism checker uses advanced machine learning algorithms to analyze text similarity 
+                            and help you maintain academic integrity and content originality.
+                        </p>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-check-circle text-success me-2"></i>Advanced Analysis</h5>
+                                <p>Uses TF-IDF vectorization and cosine similarity for accurate text comparison.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-shield-alt text-primary me-2"></i>Secure Processing</h5>
+                                <p>Your files are automatically deleted after analysis to ensure privacy and security.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-file-upload text-info me-2"></i>Multiple Formats</h5>
+                                <p>Supports TXT, DOCX, and PDF file uploads for maximum convenience.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-chart-line text-warning me-2"></i>Detailed Reports</h5>
+                                <p>Provides comprehensive similarity scores and highlighted matches.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How It Works -->
+                <div class="card shadow-lg mb-5">
+                    <div class="card-header bg-info text-white">
+                        <h3 class="mb-0">
+                            <i class="fas fa-cogs me-2"></i>
+                            How It Works
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 text-center mb-4">
+                                <div class="step-number bg-primary text-white mx-auto mb-3">1</div>
+                                <h5>Text Processing</h5>
+                                <p>Your text is cleaned, tokenized, and preprocessed to remove noise and standardize formatting.</p>
+                            </div>
+                            <div class="col-md-4 text-center mb-4">
+                                <div class="step-number bg-primary text-white mx-auto mb-3">2</div>
+                                <h5>AI Analysis</h5>
+                                <p>Advanced TF-IDF vectorization and cosine similarity algorithms analyze text similarity.</p>
+                            </div>
+                            <div class="col-md-4 text-center mb-4">
+                                <div class="step-number bg-primary text-white mx-auto mb-3">3</div>
+                                <h5>Results</h5>
+                                <p>Get comprehensive results with similarity scores, highlighted matches, and recommendations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology Stack -->
+                <div class="card shadow-lg mb-5">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="mb-0">
+                            <i class="fas fa-code me-2"></i>
+                            Technology Stack
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5><i class="fab fa-python text-primary me-2"></i>Backend</h5>
+                                <ul>
+                                    <li>Flask - Web framework</li>
+                                    <li>scikit-learn - Machine learning</li>
+                                    <li>NLTK - Natural language processing</li>
+                                    <li>python-docx - Document processing</li>
+                                    <li>PyPDF2 - PDF processing</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="fab fa-html5 text-warning me-2"></i>Frontend</h5>
+                                <ul>
+                                    <li>HTML5 & CSS3</li>
+                                    <li>Bootstrap 5 - UI framework</li>
+                                    <li>JavaScript - Interactivity</li>
+                                    <li>Font Awesome - Icons</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Use Cases -->
+                <div class="card shadow-lg mb-5">
+                    <div class="card-header bg-warning text-dark">
+                        <h3 class="mb-0">
+                            <i class="fas fa-users me-2"></i>
+                            Who Uses This Tool
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 text-center mb-4">
+                                <i class="fas fa-user-graduate fa-3x text-primary mb-3"></i>
+                                <h5>Students</h5>
+                                <p class="small">Check assignment originality before submission</p>
+                            </div>
+                            <div class="col-md-3 text-center mb-4">
+                                <i class="fas fa-chalkboard-teacher fa-3x text-success mb-3"></i>
+                                <h5>Teachers</h5>
+                                <p class="small">Review student submissions for plagiarism</p>
+                            </div>
+                            <div class="col-md-3 text-center mb-4">
+                                <i class="fas fa-pen-fancy fa-3x text-info mb-3"></i>
+                                <h5>Writers</h5>
+                                <p class="small">Ensure content uniqueness and originality</p>
+                            </div>
+                            <div class="col-md-3 text-center mb-4">
+                                <i class="fas fa-building fa-3x text-warning mb-3"></i>
+                                <h5>Professionals</h5>
+                                <p class="small">Verify business document authenticity</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Privacy & Security -->
+                <div class="card shadow-lg mb-5">
+                    <div class="card-header bg-dark text-white">
+                        <h3 class="mb-0">
+                            <i class="fas fa-lock me-2"></i>
+                            Privacy & Security
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-shield-alt text-success me-2"></i>Data Protection</h5>
+                                <ul>
+                                    <li>Files are automatically deleted after processing</li>
+                                    <li>No personal data is stored</li>
+                                    <li>Secure HTTPS connections</li>
+                                    <li>No tracking or analytics</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><i class="fas fa-user-secret text-primary me-2"></i>Privacy Features</h5>
+                                <ul>
+                                    <li>Anonymous usage - no registration required</li>
+                                    <li>No cookies or session tracking</li>
+                                    <li>Results are not stored</li>
+                                    <li>Open source and transparent</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="text-center mb-5">
+                    <a href="/" class="btn btn-primary btn-lg">
+                        <i class="fas fa-play me-2"></i>
+                        Start Checking Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">
+                <i class="fas fa-shield-alt me-2"></i>
+                AI-Powered Plagiarism Checker | Built with Flask & Machine Learning
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
